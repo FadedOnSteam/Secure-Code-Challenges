@@ -4,7 +4,7 @@ public class Node {
 
     public Node(String data, Node next){
         this.data = data;
-        this.next = null;
+        this.next = next;
     }
     public Node(String data){
         this(data, null);
