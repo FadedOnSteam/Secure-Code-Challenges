@@ -30,5 +30,6 @@ public class CityDist {
             System.out.print("Distance: " + drivingDistances[cityA][cityB]);
             System.out.println(" miles.");
         }
+        scnr.close();
     }
 }

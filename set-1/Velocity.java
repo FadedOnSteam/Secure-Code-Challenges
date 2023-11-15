@@ -2,15 +2,16 @@ import java.util.Scanner;
 public class Velocity {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
+        int initialPosition, finalPosition, initialTime, finalTime;
 
         System.out.println("What was the initial position? ");
-        int initialPosition = scnr.nextInt();
+        initialPosition = scnr.nextInt();
         System.out.println("What was the final position");
-        int finalPosition = scnr.nextInt();
+        finalPosition = scnr.nextInt();
         System.out.println("What was the initial time?");
-        int initialTime = scnr.nextInt();
+        initialTime = scnr.nextInt();
         System.out.println("What was the final time?");
-        int finalTime = scnr.nextInt();
+        finalTime = scnr.nextInt();
 
         System.out.println("The velocity of the object is " + calcVelocity(initialPosition, finalPosition, initialTime, finalTime));
         scnr.close();
