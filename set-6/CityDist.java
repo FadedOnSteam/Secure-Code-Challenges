@@ -6,23 +6,21 @@ import java.util.Scanner;
 public class CityDist {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
-        int cityA;
-        int cityB;
+
         int[][] Distances = new int[2][2];
 
-        // Initialize distances array
         Distances[0][0] = 0;
-        Distances[0][1] = 960;
-        Distances[1][0] = 960;
+        Distances[0][1] = 260;
+        Distances[1][0] = 430;
         Distances[1][1] = 0;
 
-        System.out.print("Enter city pair (Ex: 1 1) -- ");
-        cityA = scnr.nextInt();
-        cityB = scnr.nextInt();
+        System.out.print("Enter city pair (Ex: 1 1) ");
+        int A = scnr.nextInt();
+        int B = scnr.nextInt();
 
-        if ((cityA >= 0) && (cityA <= 2) && (cityB >= 0) && (cityB <= 2)) {
-            System.out.print("Distance: " + Distances[cityA][cityB]);
-            System.out.println(" miles.");
+        if ((A >= 0) && (A <= 1) && (B >= 0) && (B <= 1)) {
+            System.out.print("Distance traveled: " + Distances[A][B] + " miles.");
+            System.out.println();
         }
         scnr.close();
     }
