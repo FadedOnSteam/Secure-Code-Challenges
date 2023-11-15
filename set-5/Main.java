@@ -1,4 +1,5 @@
 public class Main {
+    // This program handles the students data at EPCC. Your boss 
     public static void main(String[] args) {
         Student s = new Student();
         s.setName("John");
