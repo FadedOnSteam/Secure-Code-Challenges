@@ -3,34 +3,26 @@ import java.util.Scanner;
 
 // is there an input that can make this program vulnerable?
 
-/* Direct driving distances between cities, in miles */
-/* 0: Boston  1: Chicago  2: Los Angeles */
 public class CityDist {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
-        int cityA; // Starting city
-        int cityB; // Destination city
-        int[][] drivingDistances = new int[3][3]; // Driving distances
+        int cityA;
+        int cityB;
+        int[][] Distances = new int[2][2];
 
         // Initialize distances array
-        drivingDistances[0][0] = 0;
-        drivingDistances[0][1] = 960; // Boston-Chicago
-        drivingDistances[0][2] = 2960; // Boston-Los Angeles
-        drivingDistances[1][0] = 960; // Chicago-Boston
-        drivingDistances[1][1] = 0;
-        drivingDistances[1][2] = 2011; // Chicago-Los Angeles
-        drivingDistances[2][0] = 2960; // Los Angeles-Boston
-        drivingDistances[2][1] = 2011; // Los Angeles-Chicago
-        drivingDistances[2][2] = 0;
-
-        System.out.println("0: Boston 1: Chicago  2: Los Angeles");
+        Distances[0][0] = 0;
+        Distances[0][1] = 960; // Boston-Chicago
+        Distances[0][2] = 2960; // Boston-Los Angeles
+        Distances[1][0] = 960; // Chicago-Boston
+        Distances[1][1] = 0;
 
         System.out.print("Enter city pair (Ex: 1 2) -- ");
         cityA = scnr.nextInt();
         cityB = scnr.nextInt();
 
         if ((cityA >= 0) && (cityA <= 2) && (cityB >= 0) && (cityB <= 2)) {
-            System.out.print("Distance: " + drivingDistances[cityA][cityB]);
+            System.out.print("Distance: " + Distances[cityA][cityB]);
             System.out.println(" miles.");
         }
         scnr.close();

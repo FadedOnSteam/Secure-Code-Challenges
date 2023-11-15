@@ -8,6 +8,7 @@ public class Main {
         System.out.println(s.getName());
         System.out.println(s.getAge());
     }
+
 }
 
 class Student {
