@@ -1,4 +1,7 @@
 import java.util.Scanner;
+// is there something a user can do to make this program behave in a way that is not expected?
+
+// is there an input that can make this program vulnerable?
 
 /* Direct driving distances between cities, in miles */
 /* 0: Boston  1: Chicago  2: Los Angeles */

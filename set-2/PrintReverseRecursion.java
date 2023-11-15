@@ -1,7 +1,12 @@
+import java.util.Scanner;
+
 public class PrintReverseRecursion {
     public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
         System.out.println("");
-        printReverseRec(5);
+        System.out.print("What value would you like to print recursively in reverse? ");
+        int user = scnr.nextInt();
+        printReverseRec(user);
     }
 
     public static void printReverseRec(int n) {
