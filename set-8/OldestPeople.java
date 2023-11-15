@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+// Is there any input the user can give to make this code work unexpectedly.
 public class OldestPeople {
     public static void main(String[] args) {
         Scanner scnr = new Scanner(System.in);
@@ -11,13 +12,15 @@ public class OldestPeople {
         oldestPeople[2] = 117; // Died 1993 in U.S.
         oldestPeople[3] = 117; // Died 1998 in Canada
         oldestPeople[4] = 116; // Died 2006 in Ecuador
-
+        // oldestPeople[5] = 116; // Died 2005 in U.S.
+        // Out of all the oldest people, choose one of them.
         System.out.print("Enter N (1-5): ");
-        nthPerson = scnr.nextInt();
+        int num = scnr.nextInt();
+        System.out.println(oldestPeople[num]);
 
-        if ((nthPerson >= 1) && (nthPerson <= 5)) {
-            System.out.print("The " + nthPerson + "th oldest person lived ");
-            System.out.println(oldestPeople[nthPerson - 1] + " years.");
+        if ((num >= 1) && (num <= 5)) {
+            System.out.print("The " + num + "th oldest person lived ");
+            System.out.println(oldestPeople[num - 1] + " years.");
         }
     }
 }
