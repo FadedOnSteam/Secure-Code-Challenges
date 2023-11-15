@@ -22,6 +22,6 @@ public class ArrayReverseElem {
             System.out.println("");
             System.out.println("Sadly the program failed :( ");
         }
-
+        scnr.close();
     }
 }
