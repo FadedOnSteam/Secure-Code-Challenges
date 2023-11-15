@@ -13,11 +13,10 @@ public class CityDist {
         // Initialize distances array
         Distances[0][0] = 0;
         Distances[0][1] = 960;
-        Distances[0][2] = 2960;
         Distances[1][0] = 960;
         Distances[1][1] = 0;
 
-        System.out.print("Enter city pair (Ex: 1 2) -- ");
+        System.out.print("Enter city pair (Ex: 1 1) -- ");
         cityA = scnr.nextInt();
         cityB = scnr.nextInt();
 
