@@ -22,5 +22,6 @@ public class OldestPeople {
             System.out.print("The " + num + "th oldest person lived ");
             System.out.println(oldestPeople[num - 1] + " years.");
         }
+        scnr.close();
     }
 }
