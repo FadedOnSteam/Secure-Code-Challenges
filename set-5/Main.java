@@ -5,8 +5,8 @@ public class Main {
         Student s = new Student();
         s.setName("John");
         s.setAge(18);
-        System.out.println(s.getName());
-        System.out.println(s.getAge());
+        System.out.println("Students name: " + s.getName());
+        System.out.println("Students Age: " + s.getAge());
     }
 
 }

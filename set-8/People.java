@@ -11,12 +11,10 @@ public class People {
         Person[1] = 11;
         Person[2] = 33;
         Person[3] = 55;
-        System.out.println("Enter the Nth youngest person you would like to see: ");
+        System.out.println("Enter the person number you would like to see the age of: ");
         nthPerson = scnr.nextInt();
-        for (int i = 0; i <= Person.length - 1; i++) {
-            System.out.println("Person " + nthPerson + ": " + Person[nthPerson] + " years old.");
-            break;
-        }
+
+        System.out.println("Person " + nthPerson + ": " + Person[nthPerson] + " years old.");
 
     }
 }
