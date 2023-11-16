@@ -19,7 +19,7 @@ and also used in password management tools.
 
 */
 SecretKeySpec key = new SecretKeySpec("password".getBytes(), "DES");
-Cipher cipher = Cipher.getInstance("DES"); // make note of this encryption standard...
+Cipher cipher = Cipher.getInstance("DES");
 cipher.init(Cipher.ENCRYPT_MODE, key);
 byte[] encrypted = cipher.doFinal("secret data".getBytes());
 }
