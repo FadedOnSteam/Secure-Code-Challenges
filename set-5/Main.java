@@ -1,5 +1,4 @@
 public class Main {
-    // This program handles the students data at EPCC.
     // Make sure the students information is safe and secure.
     public static void main(String[] args) {
         Student s = new Student();
